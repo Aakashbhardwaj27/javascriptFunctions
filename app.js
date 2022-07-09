@@ -51,3 +51,14 @@ const arrSumReduced=arr => arr.reduce((a,b)=>a+b)
 // console.log(findSum(4))
 // console.log(findFactorial(5))
 // console.log(findSumConstant(4))
+
+const fib = (n) => {
+    let numbers = [1, 1]
+    for (let i = 2; i <= n; i++){
+        numbers.push(numbers[i-1]+numbers[i-2])
+    }
+    return numbers
+}
+
+
+console.log(fib(5))
